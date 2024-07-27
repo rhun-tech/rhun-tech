@@ -4,7 +4,8 @@ I'm @rhun-tech, a passionate developer exploring the realms of software engineer
 
 - Rhun Quest: I'm currently crafting an immersive choose-your-own-adventure story called Rhun Quest. It's a journey filled with challenges, magic, and deep narratives. Technically speaking, it's a Blazor server application leverging Fluent UI components and a minimal API for data retrieval. Did I mention I am using GitHub Actions? All too cool. Join me as we explore this epic tale together!
   - [Rhun Quest](https://rhunquest.azurewebsites.net/)
-
+  - [Rhun Quest API](https://rhunquestapi.azurewebsites.net/)
+  
 - Static Website: I have a static website that showcases my projects and interests. Currently considering migrating it to Azure Storage Account static websites for cost reasons.
   - [Rhun Tech](https://rhun.tech/)
 
