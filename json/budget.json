@@ -1,0 +1,22 @@
+{
+    "Budget": {
+        "Income": {
+            "Salary": 5000,
+            "Other Income": 500
+        },
+        "Savings": {
+            "Savings": 500,
+            "Retirement": 1500,
+            "Emergency Fund": 1000
+        },
+        "Expenditures": {
+            "Housing": 1500,
+            "Savings": 500,
+            "Utilities": 200,
+            "Groceries": 300,
+            "Miscellaneous": 50,
+            "Entertainment": 100,
+            "Transportation": 150
+        }
+    }
+}
