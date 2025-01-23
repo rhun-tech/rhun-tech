@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rhun</title>
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="images/icon-192.png" rel="apple-touch-icon" sizes="192x192" />
+  <link href="images/icon-512.png" rel="apple-touch-icon" sizes="512x512" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../css/rhun.css">
+
+  <script src="/js/components/components.js" type="module" defer></script>
+</head>
+
+<body data-bs-theme="dark" class="container p-1 mt-1">
+  <header-component></header-component>
+
+  <title-component title="Library" icon="game-icons:bookshelf"></title-component>
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
+        <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
+          <details-component summary="Somesense" open>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-intellisense-tab" data-bs-toggle="tab"
+              href="#nav-intellisense" role="tab">IntelliSense</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-heroquest-tab" data-bs-toggle="tab"
+              href="#nav-heroquest" role="tab">HeroQuest</a>
+          </details-component>
+          <details-component summary="Nonsense" open>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-possessions-tab" data-bs-toggle="tab"
+              href="#nav-possessions" role="tab">Possessions</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-obsessions-tab" data-bs-toggle="tab"
+              href="#nav-obsessions" role="tab">Obsessions</a>
+          </details-component>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-10 col-lg-10">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow" id="fademe">
+        <div class="tab-content p-3" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-intellisense" role="tabpanel">
+            <title-section-component title="IntelliSense" icon="game-icons:abstract-006"></title-section-component>
+            <p>There's something deeply satisfying about crafting a new class in C# and seamlessly integrating it into
+              your project. Whether you're building a complex application or refining a simple utility, the process of
+              defining a class and watching as IntelliSense effortlessly picks it up when you reference it is incredibly
+              gratifying.</p>
+            <p>In those moments, programming feels like sculpting—a blend of creativity and technical precision. You
+              meticulously define properties, methods, and behaviors, shaping your class to fit perfectly into the
+              larger architecture of your application. Each line of code is a deliberate choice, laying the foundation
+              for functionality that will enhance your software.</p>
+            <p>And then comes the moment of integration. You begin to use your new class throughout your codebase, and
+              here's where IntelliSense truly shines. As you type, it anticipates your intentions, suggesting your newly
+              created class name and its members with pinpoint accuracy. This intuitive support not only speeds up your
+              coding but also validates your design choices, reinforcing the satisfaction of a job well done.</p>
+            <p>Beyond the practical benefits, there's a sense of accomplishment in seeing your creation seamlessly blend
+              into the development environment. It's a testament to your understanding of object-oriented principles and
+              your ability to translate concepts into concrete, usable components.</p>
+            <p>Whether you're a seasoned developer or just starting out, these moments of integration and validation
+              serve as reminders of why we love to code. It's not just about building software; it's about crafting
+              solutions that fit together flawlessly, driven by the joy of seeing your ideas come to life in lines of
+              code.</p>
+            <p>So here's to those moments when a new class becomes more than just a part of your project—it becomes a
+              testament to your skill, creativity, and the endless possibilities of C# development.</p>
+          </div>
+          <div class="tab-pane fade" id="nav-heroquest" role="tabpanel">
+            <title-section-component title="HeroQuest" icon="game-icons:crypt-entrance"></title-section-component>
+            <p>HeroQuest is a fantasy-themed board game that was first released in 1989. Designed by Stephen Baker and
+              published by Milton Bradley in conjunction with Games Workshop, the game combines elements of role-playing
+              games and classic board games, offering an engaging and immersive experience for players. Set in a richly
+              detailed medieval fantasy world, HeroQuest allows players to take on the roles of heroic adventurers such
+              as a Barbarian, Dwarf, Elf, and Wizard, each with unique abilities and strengths. The players navigate
+              through various quests and dungeons, fighting monsters, discovering treasures, and solving puzzles.</p>
+            <p>A crucial aspect of HeroQuest is the emphasis on teamwork. It is vital for the heroes to collaborate and
+              strategize together rather than setting off on their own. The game's challenges are designed to be tackled
+              collectively, with each character's unique abilities complementing the others. For instance, the Barbarian
+              might excel in combat, the Wizard can cast powerful spells, the Elf balances combat and magic, and the
+              Dwarf can disarm traps. Working together allows the heroes to overcome obstacles and enemies more
+              effectively, ensuring a higher chance of success.</p>
+            <p>One player takes on the role of the Game Master, known as the "<code>Evil Wizard Zargon</code>" in the
+              original game, who controls the monsters and lays out the dungeon using a modular board system. The game's
+              scenarios and quests are provided in a quest book, but players are also encouraged to create their own
+              adventures, adding to the game's replayability. With its combination of strategic combat, exploration, and
+              cooperative gameplay, HeroQuest has been praised for its accessibility to newcomers of the fantasy genre
+              while still offering depth and challenge for experienced gamers. Its influence can be seen in many modern
+              board games and it remains a beloved classic in the gaming community.</p>
+          </div>
+          <div class="tab-pane fade" id="nav-possessions" role="tabpanel">
+            <title-section-component title="Possessions" icon="game-icons:abstract-083"></title-section-component>
+            <p>Is it possible to be possessed by possessions? A possession is something that is owned.</p>
+            <p>However, the possession owned by the owner can possess the owner.</p>
+            <p>This occurs when the owner becomes obsessed with the item, allowing it to dominate their thoughts and
+              actions. Consequently, the owner's sense of self can become intertwined with the possession, leading to a
+              loss of freedom and autonomy.</p>
+            <p>A bird is comforted by its nest, a turtle by its shell, a dragon by its lair. Though a dragon's lair is
+              not unadorned, nor are our homes.</p>
+            <p>Like a dragon, we seek to hoard, among other things, wealth. To store it. To keep it.</p>
+            <p>Possessions can become part of our identity. This is akin to the beliefs of those before us who buried
+              the deceased with their goods. These items were important to the departed, yet not important enough for
+              the living to keep.</p>
+          </div>
+          <div class="tab-pane fade" id="nav-obsessions" role="tabpanel">
+            <title-section-component title="Obsessions" icon="game-icons:abacus"></title-section-component>
+            <p>Ah, statistics and data science, where the numbers never lie, but oh, how the liars figure! It's a world
+              where you can twist and turn the data until it confesses to whatever narrative you desire, all while
+              maintaining a facade of objectivity.</p>
+            <p>As Mark Twain so aptly put it, "Figures don't lie, but liars figure."</p>
+            <p>And boy, do they figure!</p>
+            <p>They massage those datasets until they scream for mercy, cherry-picking variables and massaging
+              coefficients until they sing in perfect harmony with the desired conclusion.</p>
+            <p>It's a game of manipulation masked in the guise of science, where correlation is mistaken for causation,
+              and outliers are either heroes or villains, depending on the story you want to tell.</p>
+            <p>So, let's raise our hands in applause to the statistical illusionists, the masters of deception in a
+              world where truth is but a malleable commodity, and where the only thing certain is the uncertainty
+              lurking behind every regression line.</p>
+            <p>In this era of relentless data obsession, where every decision is made under the oppressive gaze of
+              analytics dashboards and pie charts, it seems we've traded common sense for the seductive allure of
+              data-driven delusion, where the quest for numbers reigns supreme, even if it means sacrificing our sanity
+              at the altar of statistical significance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="/js/url-parameters.js" type="text/javascript" defer></script>
+</body>
+
+</html>

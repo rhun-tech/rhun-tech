@@ -1,0 +1,184 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rhun</title>
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="images/icon-192.png" rel="apple-touch-icon" sizes="192x192" />
+  <link href="images/icon-512.png" rel="apple-touch-icon" sizes="512x512" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../css/rhun.css">
+  <link rel="stylesheet" type="text/css" href="/css/prism.css">
+
+  <script src="/js/components/components.js" type="module" defer></script>
+
+  <script src="/js/spells/shuffle.js" type="text/javascript" defer></script>
+  <script src="/js/spells/time-since.js" type="text/javascript" defer></script>
+</head>
+
+<body data-bs-theme="dark" class="container p-1 mt-1">
+
+  <header-component></header-component>
+  <title-component title="Spells" icon="game-icons:book-pile"></title-component>
+
+  <div class="row">
+    <div class="col-md-2 col-lg-2">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3" style="position: relative; overflow: hidden;">
+        <div class="nav nav-pills flex-column" id="nav-tab" role="tablist">
+          <details-component summary="Minor Spells" open>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow active" id="nav-shuffle-tab" data-bs-toggle="tab"
+              href="#nav-shuffle" role="tab">Shuffle</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-time-since-tab" data-bs-toggle="tab"
+              href="#nav-time-since" role="tab">Time Since</a>
+          </details-component>
+          <hr>
+          <details-component summary="Major Spells">
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-depictions-tab" data-bs-toggle="tab"
+              href="#nav-depictions" role="tab">Depictions</a>
+            <a class="nav-link mx-1 my-1 rhun-rounded rhun-shadow" id="nav-elemental-tab" data-bs-toggle="tab"
+              href="#nav-elemental" role="tab">Elemental Power</a>
+          </details-component>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-10 col-lg-10">
+      <div class="bg-body-tertiary p-3 rhun-rounded rhun-shadow mb-3">
+        <div class="tab-content p-3" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-shuffle" role="tabpanel">
+            <title-section-component title="Shuffle"
+              icon="game-icons:perspective-dice-six-faces-random"></title-section-component>
+            <label for="inputText" class="form-label">Text to shuffle</label>
+            <div class="row pb-3">
+              <div class="col-auto">
+                <input type="text" class="form-control custom-input rhun-text rhun-rounded" id="inputText"
+                  oninput="updateshuffledText()">
+              </div>
+            </div>
+
+            <div class="pb-3">Results</div>
+
+            <div class="row">
+              <div class="col"><span id="shuffledText1">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span>
+              </div>
+              <div class="col"><span id="shuffledText2">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText3">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+            </div>
+            <div class="row">
+              <div class="col"><span id="shuffledText4">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText5">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText6">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+            </div>
+            <div class="row">
+              <div class="col"><span id="shuffledText7">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText8">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+              <div class="col"><span id="shuffledText9">
+                  <p class="placeholder-glow">
+                    <span class="placeholder rounded col-3"></span>
+                  </p>
+                </span></div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-time-since" role="tabpanel">
+            <title-section-component title="Time Since" icon="game-icons:hourglass"></title-section-component>
+            <label for="inputDate" class="form-label">Time Since</label>
+            <div class="row pb-3">
+              <div class="col-auto">
+                <input type="date" class="form-control custom-input rhun-text rhun-rounded" id="inputDate"
+                  oninput="calculateTimeSince()">
+              </div>
+            </div>
+            <div class="pb-3">Results</div>
+
+            <div class="row">
+              <div class="col"><span id="result">
+                <rhunic-component></rhunic-component>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-depictions" role="tabpanel">
+            <title-section-modal-component title="Depictions" icon="game-icons:chisel"
+              target="#uploadModal"></title-section-modal-component>
+            <div id="output">
+              <div class="rhun-center">
+                <rhunic-component></rhunic-component>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-elemental" role="tabpanel">
+            <title-section-modal-component title="Elemental Power" icon="game-icons:lightning-electron"
+              target="#weatherModal"></title-section-modal-component>
+            <div id="weather-data">
+              <div class="rhun-center">
+                <rhunic-component></rhunic-component>
+              </div>
+              <weather-loading></weather-loading>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <depictions-modal-component></depictions-modal-component>
+
+  <weather-modal-component></weather-modal-component>
+
+  <script src="/js/prism.js"></script>
+  <script>
+    Prism.highlightAll();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/spells/displayJson.js" defer></script>
+  <script src="/js/spells/weather.js" type="text/javascript" defer></script>
+  <script src="/js/url-parameters.js" type="text/javascript" defer></script>
+
+</body>
+
+</html>
